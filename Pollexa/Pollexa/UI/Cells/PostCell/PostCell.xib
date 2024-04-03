@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="32700.99.1234" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="22684"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="" id="gTV-IL-0wX" customClass="PostCell" customModule="Pollexa" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="335" height="201"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="335" height="201"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="UserIcon" translatesAutoresizingMaskIntoConstraints="NO" id="Gsp-sf-p2z">
+                        <rect key="frame" x="12" y="40" width="70" height="70"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="70" id="8MB-2G-bxW"/>
+                            <constraint firstAttribute="width" constant="70" id="fHK-CI-DvQ"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="252" misplaced="YES" text="Comment" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FLJ-ex-IRQ">
+                        <rect key="frame" x="94" y="77" width="229" height="61"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <button opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="RMV-K9-i9u">
+                        <rect key="frame" x="169" y="241" width="32" height="34"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="32" id="nOr-FX-Ktj"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup" catalog="system"/>
+                    </button>
+                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uqa-bq-a3f">
+                        <rect key="frame" x="255" y="241" width="53" height="29"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="29" id="qOO-Jo-zX6"/>
+                        </constraints>
+                        <color key="tintColor" systemColor="systemIndigoColor"/>
+                        <state key="normal" title="Button"/>
+                        <buttonConfiguration key="configuration" style="plain" image="hand.thumbsup" catalog="system"/>
+                    </button>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qC2-cp-clK">
+                        <rect key="frame" x="94" y="45" width="229" height="20"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="20" id="Fq8-ci-O2j"/>
+                        </constraints>
+                        <fontDescription key="fontDescription" type="boldSystem" pointSize="16"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+            </view>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="qC2-cp-clK" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="45" id="5jz-EV-MAn"/>
+                <constraint firstItem="RMV-K9-i9u" firstAttribute="top" secondItem="Uqa-bq-a3f" secondAttribute="top" id="6uv-NV-qLi"/>
+                <constraint firstItem="Uqa-bq-a3f" firstAttribute="leading" secondItem="RMV-K9-i9u" secondAttribute="trailing" constant="54" id="84U-KR-GMf"/>
+                <constraint firstAttribute="trailing" secondItem="FLJ-ex-IRQ" secondAttribute="trailing" constant="12" id="ChU-Eu-ghv"/>
+                <constraint firstItem="qC2-cp-clK" firstAttribute="leading" secondItem="Gsp-sf-p2z" secondAttribute="trailing" constant="12" id="DTg-tt-yZd"/>
+                <constraint firstAttribute="trailing" secondItem="Uqa-bq-a3f" secondAttribute="trailing" constant="27" id="E6M-2C-NYA"/>
+                <constraint firstItem="Gsp-sf-p2z" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="12" id="Fd9-DM-whb"/>
+                <constraint firstItem="FLJ-ex-IRQ" firstAttribute="leading" secondItem="Gsp-sf-p2z" secondAttribute="trailing" constant="12" id="G2B-2l-j9S"/>
+                <constraint firstItem="Gsp-sf-p2z" firstAttribute="top" secondItem="gTV-IL-0wX" secondAttribute="top" constant="40" id="kbL-Gg-k9J"/>
+                <constraint firstItem="FLJ-ex-IRQ" firstAttribute="top" secondItem="qC2-cp-clK" secondAttribute="bottom" constant="12" id="rmu-jd-ckp"/>
+                <constraint firstAttribute="bottom" secondItem="Uqa-bq-a3f" secondAttribute="bottom" constant="-69" id="t21-7d-dXL"/>
+                <constraint firstItem="RMV-K9-i9u" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="169" id="two-wi-8Sp"/>
+                <constraint firstAttribute="trailing" secondItem="qC2-cp-clK" secondAttribute="trailing" constant="12" id="yJv-BG-QCu"/>
+            </constraints>
+            <size key="customSize" width="493" height="380"/>
+            <connections>
+                <outlet property="detailsLabel" destination="FLJ-ex-IRQ" id="ZAn-nX-cUX"/>
+                <outlet property="firstFavButton" destination="RMV-K9-i9u" id="iz4-Vh-xaK"/>
+                <outlet property="secondFavButton" destination="Uqa-bq-a3f" id="sgW-0j-mRd"/>
+                <outlet property="userIcon" destination="Gsp-sf-p2z" id="kAE-lI-DKJ"/>
+                <outlet property="userName" destination="qC2-cp-clK" id="hkk-l9-QRF"/>
+            </connections>
+            <point key="canvasLocation" x="454.19847328244271" y="91.901408450704224"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="UserIcon" width="225" height="225"/>
+        <image name="hand.thumbsup" catalog="system" width="123" height="128"/>
+        <systemColor name="systemIndigoColor">
+            <color red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>
